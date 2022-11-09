@@ -47,7 +47,6 @@
 
 <script>
 import { v4 as uuidv4 } from 'uuid'
-import EventService from '@/services/EventService'
 
 export default {
   data() {
@@ -83,13 +82,16 @@ export default {
       console.log('Event:', this.event)
       console.log('Event:', event)
 
-      EventService.postEvent(event)
-        .then(() => {
-          this.$store.commit('ADD_EVENT', event)
-        })
-        .catch(error => {
-          console.log(error)
-        })
+      // EventService.postEvent(event)
+      //   .then(() => {
+      //     this.$store.commit('ADD_EVENT', event)
+      //   })
+      //   .catch(error => {
+      //     console.log(error)
+      //   })
+      //   moved to store index.js in action
+      this.$store.dispatch('createEvent', event)
+      //above trigger the action first one is action name in store , second one is payload
     }
   }
 }

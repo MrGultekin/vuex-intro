@@ -59,6 +59,16 @@
       "date": "9th Nov 2022",
       "time": "15 PM",
       "organizer": "Mustafa Rosenthal"
+    },
+    {
+      "id": "6a64b084-2f57-4a24-8890-ebf7e5f3125a",
+      "category": "education",
+      "title": "Action payload",
+      "description": "Learn action in store dispatch it with event payload",
+      "location": "Dresden",
+      "date": "9th Nov 2022",
+      "time": "09:50",
+      "organizer": "Mustafa Rosenthal"
     }
   ]
 }
