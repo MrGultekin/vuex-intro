@@ -25,7 +25,12 @@ export default {
     //   .catch(error => {
     //     console.log(error)
     //   })          MOVED to store action AND added below dispatch
-    this.$store.dispatch('fetchEvents')
+    this.$store.dispatch('fetchEvents').catch(error => {
+      this.$router.push({
+        name: 'ErrorDisplay',
+        params: { error: error }
+      })
+    })
   }
 }
 </script>
