@@ -39,6 +39,16 @@
       "date": "q",
       "time": "q",
       "organizer": "Mustafa Rosenthal"
+    },
+    {
+      "id": "4bf8a4d4-871a-49ae-a1e8-7a9a015717bc",
+      "category": "education",
+      "title": "Erasmus",
+      "description": "Free Education ",
+      "location": "Dresden ",
+      "date": "9.11.2022",
+      "time": "9 am",
+      "organizer": "Mustafa Rosenthal"
     }
   ]
 }

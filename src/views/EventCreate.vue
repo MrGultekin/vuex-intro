@@ -73,10 +73,15 @@ export default {
   },
   methods: {
     onSubmit() {
-      this.event.id = uuidv4()
-      this.event.organizer = this.$store.state.user
+      const event = {
+        ...this.event,
+        id: uuidv4(),
+        organizer: this.$store.state.user
+      }
       console.log('Event:', this.event)
-      EventService.postEvent(this.event)
+      console.log('Event:', event)
+
+      EventService.postEvent(event)
         .then(() => {
           // todo add event to Vuex store
         })
