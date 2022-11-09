@@ -69,6 +69,16 @@
       "date": "9th Nov 2022",
       "time": "09:50",
       "organizer": "Mustafa Rosenthal"
+    },
+    {
+      "id": "1e54d620-1148-4372-9686-e49ef2ac2cbe",
+      "category": "",
+      "title": "Suppose to go to Details",
+      "description": "Desc: should go to its own details ",
+      "location": "Impact Hub",
+      "date": "9/11/2022",
+      "time": "3PM",
+      "organizer": "Mustafa Rosenthal"
     }
   ]
 }

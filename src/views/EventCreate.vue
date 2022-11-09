@@ -90,8 +90,15 @@ export default {
       //     console.log(error)
       //   })
       //   moved to store index.js in action
-      this.$store.dispatch('createEvent', event)
-      //above trigger the action first one is action name in store , second one is payload
+      this.$store
+        .dispatch('createEvent', event)
+        //above trigger the action first one is action name in store , second one is payload
+        .then(() => {
+          this.$router.push({
+            name: 'EventDetails',
+            params: { id: event.id }
+          })
+        })
     }
   }
 }
