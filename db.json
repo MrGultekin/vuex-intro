@@ -49,6 +49,16 @@
       "date": "9.11.2022",
       "time": "9 am",
       "organizer": "Mustafa Rosenthal"
+    },
+    {
+      "id": "4d1fbc8e-0855-4491-95af-440b288d353c",
+      "category": "",
+      "title": "Vue",
+      "description": "Learn it faster",
+      "location": "HxCode1",
+      "date": "9th Nov 2022",
+      "time": "15 PM",
+      "organizer": "Mustafa Rosenthal"
     }
   ]
 }

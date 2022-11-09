@@ -40,6 +40,8 @@
 
       <button type="submit">Submit</button>
     </form>
+    <div>{{ $store.state.events }}</div>
+    <!--  above div  just for testing 2 c it-->
   </div>
 </template>
 
@@ -83,7 +85,7 @@ export default {
 
       EventService.postEvent(event)
         .then(() => {
-          // todo add event to Vuex store
+          this.$store.commit('ADD_EVENT', event)
         })
         .catch(error => {
           console.log(error)
